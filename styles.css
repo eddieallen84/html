@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana;
+}
+.cadastro{
+    margin: 10px auto;
+    width: 800px;  
+}
+label{
+    display: inline-block;
+    padding: 10px 10px;      
+}
+fieldset{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: gray; 
+    padding: 10px;
+    background-color: lightgrey;      
+}
+input{
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+select{
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+button{
+    background-color: gray;
+    font-size: large;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+legend{
+    background-color: white;
+}
+    

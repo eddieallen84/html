@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form class="cadastro">    
+<h1>CADASTRO</h1>
+    <fieldset>
+        <legend><strong>Dados Pessoais</strong></legend>
+        <label>Nome:</label><input id="Nome" type="text" size="25"/>
+        <label>Sobrenome:</label><input id="Sobrenome" type="text" size="30" />
+        <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+                <option value="f">F</option>
+                <option value="m">M</option>
+            </select> 
+        <label>Data de Nascimento:</label><input id="Nascimento" type="data" />
+        <label for="natural">Natural de:</label><input id="natural" type="text" size="21"/>
+        <label for="uf">UF:</label>
+            <select name="uf" id="uf">
+                <option value="mt">MT</option>
+                <option value="ac">AC</option> 
+                <option value="al">AL</option> 
+                <option value="am">AM</option> 
+                <option value="ap">AP</option> 
+                <option value="ba">BA</option> 
+                <option value="ce">CE</option> 
+                <option value="df">DF</option> 
+                <option value="es">ES</option> 
+                <option value="go">GO</option> 
+                <option value="ma">MA</option> 
+                <option value="ms">MS</option> 
+                <option value="mg">MG</option> 
+                <option value="pa">PA</option> 
+                <option value="pb">PB</option> 
+                <option value="pr">PR</option> 
+                <option value="pe">PE</option> 
+                <option value="pi">PI</option> 
+                <option value="rj">RJ</option> 
+                <option value="rn">RN</option> 
+                <option value="ro">RO</option> 
+                <option value="rs">RS</option> 
+                <option value="rr">RR</option> 
+                <option value="sc">SC</option> 
+                <option value="se">SE</option> 
+                <option value="sp">SP</option> 
+                <option value="to">TO</option>
+            </select>           
+        <label>Profissão:</label><input id="Profissao" type="text" size="30"/>
+        <label>Empresa:</label><input id="empresa" type="text" size="30"/>
+    </fieldset>
+<p></p>
+    <fieldset>
+    <legend><strong>Endereço</strong></legend>
+        <label>Rua:</label><input id="rua" type="text" />
+        <label>Número:</label><input id="numero" type="number" />
+        <label>CEP:</label><input id="cep" name="CEP" id="CEP" placeholder="00000-000" maxlength="9" />
+        <label>Complemento:</label><input id="Complemento" type="text" size="30">
+        <label>Bairro:</label><input id="Bairro" type="text" size="35"/>
+        <label>Cidade:</label><input id="Cidade" type="text" size="35"/>
+        <label for="uf">UF:</label>
+            <select name="uf" id="uf">
+                <option value="mt">MT</option>
+                <option value="ac">AC</option> 
+                <option value="al">AL</option> 
+                <option value="am">AM</option> 
+                <option value="ap">AP</option> 
+                <option value="ba">BA</option> 
+                <option value="ce">CE</option> 
+                <option value="df">DF</option> 
+                <option value="es">ES</option> 
+                <option value="go">GO</option> 
+                <option value="ma">MA</option> 
+                <option value="ms">MS</option> 
+                <option value="mg">MG</option> 
+                <option value="pa">PA</option> 
+                <option value="pb">PB</option> 
+                <option value="pr">PR</option> 
+                <option value="pe">PE</option> 
+                <option value="pi">PI</option> 
+                <option value="rj">RJ</option> 
+                <option value="rn">RN</option> 
+                <option value="ro">RO</option> 
+                <option value="rs">RS</option> 
+                <option value="rr">RR</option> 
+                <option value="sc">SC</option> 
+                <option value="se">SE</option> 
+                <option value="sp">SP</option> 
+                <option value="to">TO</option>
+            </select>                
+    </fieldset>
+<p></p>
+    <fieldset>
+    <Legend><strong>Informações de Contato</strong></Legend>
+            <label>Celular:</label><input id="celular" type="tel" placeholder="(xx)9999-9999" maxlength="11" size="35"/>
+            <label>E-mail:</label><input id="email" type="email" placeholder="nome@email.com" size="35" />
+            <label for="Whatsapp">Whatsapp:</label><input id="Whatsapp" type="tel" size="35"/>
+            <label for="github">Github:</label><input id="github" placeholder="https://github.com/user" type="text" size="35" />  
+    </fieldset>    
+<button type="button" id="Enviar" onclick="enviar()">Enviar</button>
+<button type="button" id="Limpar" onclick="limpar()">Limpar Formulário</button>
+</form>
+</body>
+</html>
